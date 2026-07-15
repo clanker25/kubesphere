@@ -1,0 +1,28 @@
+version: 1
+
+requirements:
+  signed_off_by:
+    required: true
+
+always_pending:
+  title_regex: '^WIP'
+  explanation: 'Work in progress...'
+
+group_defaults:
+  required: 3
+  approve_by_comment:
+    enabled: false
+    approve_regex: '^LGTM'
+    reject_regex: '^Rejected'
+  reset_on_push:
+    enabled: true
+  author_approval:
+    ignored: false
+  conditions:
+    branches:
+      - master
+
+groups:
+  go-digest:
+    teams:
+      - go-digest-maintainers

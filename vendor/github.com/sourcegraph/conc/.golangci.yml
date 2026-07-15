@@ -1,0 +1,11 @@
+linters:
+  disable-all: false
+  enable:
+    - errcheck
+    - godot
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - typecheck
+    - unused
