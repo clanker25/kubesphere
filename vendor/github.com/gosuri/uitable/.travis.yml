@@ -1,0 +1,6 @@
+language: go
+sudo: true
+install:
+  - go get ./...
+go:
+  - tip
