@@ -1,0 +1,16 @@
+coverage:
+  range: "60...95"
+  status:
+    project:
+      default:
+        threshold: 0%
+        informational: false
+    patch:
+      defualt:
+        only_pulls: true
+        informational: true
+
+comment:
+  layout: 'diff'
+
+github_checks: false
